@@ -1,7 +1,7 @@
 import Navigation from "@/components/navigation";
-import Hero from "@/components/hero";
+import HeroMinimal from "@/components/hero-minimal";
 import About from "@/components/about";
-import Skills from "@/components/skills";
+import SkillsClean from "@/components/skills-clean";
 import Experience from "@/components/experience";
 import Education from "@/components/education";
 import Projects from "@/components/projects";
@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <Hero />
+      <HeroMinimal />
       <About />
-      <Skills />
+      <SkillsClean />
       <Experience />
       <Education />
       <Projects />

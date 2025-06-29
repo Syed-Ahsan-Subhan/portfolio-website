@@ -119,8 +119,27 @@ This is a modern full-stack portfolio website built with React, TypeScript, Expr
 - `npm run db:push`: Push database schema changes
 
 ## Changelog
-- June 29, 2025. Initial setup
+- June 29, 2025. Initial setup with portfolio website
+- June 29, 2025. Redesigned with Amar.im inspiration - minimalist hero, technical expertise visualization, detailed career highlights
+
+## Recent Changes
+
+### Amar.im-Inspired Redesign (June 29, 2025)
+- **Hero Section**: Minimalist design with bold typography, floating technical keywords, clean tagline approach
+- **Technical Expertise**: Organized skills into categorized sections (Frontend, Backend, DevOps) with interactive hover effects
+- **Experience Section**: Enhanced with detailed achievement bullet points similar to Amar's professional storytelling
+- **Typography**: Improved font hierarchy and spacing for better readability
+- **Animation**: Subtle entrance animations and floating elements
+- **Color Scheme**: Cleaner, more professional palette with better contrast
+
+### Key Inspirations from Amar.im
+- Clean, minimalist hero with compelling tagline format
+- Interactive technical expertise visualization with organized categories
+- Professional storytelling approach in experience section
+- Modern typography and sophisticated spacing
+- Unique personal branding elements
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Design inspiration: Amar.im's clean, professional, minimalist approach.

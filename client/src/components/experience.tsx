@@ -6,33 +6,54 @@ const experiences = [
     title: "Senior Full Stack Developer",
     company: "TechCorp Solutions",
     period: "Jan 2022 - Present",
-    description: "Lead development of enterprise web applications using React, Node.js, and AWS. Managed a team of 4 developers and improved system performance by 40%.",
-    skills: ["React", "Node.js", "AWS", "Team Leadership"],
+    description: "Leading enterprise architecture initiatives and driving technological innovation across web applications.",
+    achievements: [
+      "Led enterprise-wide modernization, driving scalability across payments, e-commerce, and legacy systems",
+      "Built and governed a performance optimization practice enabling 40% faster load times and real-time insights",
+      "Instituted cloud-native principles and developer experience frameworks for React, Node.js migrations",
+      "Directed global technology initiatives including API strategy, microservices infrastructure, and CI/CD design",
+      "Championed alignment between architecture and business goals with focus on scalable patterns"
+    ],
+    skills: ["React", "Node.js", "AWS", "Team Leadership", "Microservices"],
     icon: Code,
-    color: "bg-blue-600",
-    textColor: "text-blue-600",
-    bgColor: "bg-blue-100"
+    color: "bg-slate-600",
+    textColor: "text-slate-600",
+    bgColor: "bg-slate-100"
   },
   {
     title: "Full Stack Developer",
     company: "StartupXYZ",
     period: "Mar 2020 - Dec 2021",
-    description: "Developed and maintained multiple client projects using modern JavaScript frameworks. Collaborated with design team to create responsive, user-friendly interfaces.",
-    skills: ["Vue.js", "Python", "PostgreSQL", "Docker"],
+    description: "Specialized in building high-scale, low-latency systems to enhance the platform experience.",
+    achievements: [
+      "Architected scalable payment processing system handling 10M+ transactions monthly",
+      "Advocated for unified interface design through extensive research on complex API specifications",
+      "Led development of one of the most reliable platforms, focusing on 99.9% uptime delivery",
+      "Championed polyglot approach to software development, leveraging diverse programming languages",
+      "Conducted in-depth performance optimization reducing response times by 60%"
+    ],
+    skills: ["Vue.js", "Python", "PostgreSQL", "Docker", "Redis"],
     icon: Laptop,
-    color: "bg-cyan-500",
-    textColor: "text-cyan-500",
-    bgColor: "bg-cyan-100"
+    color: "bg-blue-600",
+    textColor: "text-blue-600",
+    bgColor: "bg-blue-100"
   },
   {
     title: "Junior Developer",
     company: "WebDev Agency",
     period: "Jun 2019 - Feb 2020",
-    description: "Started my professional journey building WordPress sites and learning modern web development. Quickly progressed to working with React and building custom solutions.",
-    skills: ["HTML/CSS", "JavaScript", "WordPress", "PHP"],
+    description: "Developed modern web solutions and automated key processes to increase efficiency.",
+    achievements: [
+      "Overhauled development patterns for client solutions using modern JavaScript frameworks",
+      "Integrated modern build tools and automations increasing productivity by 35%",
+      "Streamlined development processes to enhance code quality and deployment efficiency",
+      "Automated key processes reducing operational risks and manual overhead",
+      "Recognized as 'Rising Star' for exceptional performance and rapid skill development"
+    ],
+    skills: ["HTML/CSS", "JavaScript", "WordPress", "PHP", "Git"],
     icon: GraduationCap,
-    color: "bg-emerald-500",
-    textColor: "text-emerald-500",
+    color: "bg-emerald-600",
+    textColor: "text-emerald-600",
     bgColor: "bg-emerald-100"
   }
 ];
@@ -83,7 +104,17 @@ export default function Experience() {
                     </div>
                   </div>
                   <p className="text-gray-600 text-sm mb-3">{experience.period}</p>
-                  <p className="text-gray-700 mb-4">{experience.description}</p>
+                  <p className="text-gray-700 mb-4 font-medium">{experience.description}</p>
+                  
+                  <ul className="text-gray-600 text-sm mb-4 space-y-2">
+                    {experience.achievements.map((achievement, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <span className="text-gray-400 mr-2">•</span>
+                        <span>{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  
                   <div className="flex flex-wrap gap-2">
                     {experience.skills.map((skill) => (
                       <span

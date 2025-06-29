@@ -1,56 +1,20 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { FaGitAlt, FaDocker, FaDatabase, FaAws } from "react-icons/fa";
 
 const technicalSkills = [
-  { name: "JavaScript / TypeScript", level: 90, category: "Frontend" },
-  { name: "React / Next.js", level: 85, category: "Frontend" },
-  { name: "Node.js / Express", level: 88, category: "Backend" },
-  { name: "Python / Django", level: 82, category: "Backend" },
-  { name: "AWS / Cloud Services", level: 75, category: "Cloud" },
-  { name: "PostgreSQL / MongoDB", level: 80, category: "Database" },
-  { name: "Docker / Kubernetes", level: 70, category: "DevOps" },
-  { name: "GraphQL / REST APIs", level: 85, category: "APIs" },
+  { name: "JavaScript / TypeScript", category: "Frontend" },
+  { name: "React / Next.js", category: "Frontend" },
+  { name: "Node.js / Express", category: "Backend" },
+  { name: "Python / Django", category: "Backend" },
+  { name: "AWS / Cloud Services", category: "Cloud" },
+  { name: "PostgreSQL / MongoDB", category: "Database" },
+  { name: "Docker / Kubernetes", category: "DevOps" },
+  { name: "GraphQL / REST APIs", category: "APIs" },
 ];
 
-const tools = [
-  { icon: FaGitAlt, name: "Git & GitHub", color: "text-orange-500" },
-  { icon: FaDocker, name: "Docker", color: "text-blue-500" },
-  { icon: FaDatabase, name: "MongoDB", color: "text-green-500" },
-  { icon: FaAws, name: "AWS", color: "text-yellow-500" },
-];
-
-const softSkills = [
-  "Problem Solving",
-  "Team Leadership", 
-  "Communication",
-  "Agile/Scrum",
-  "Mentoring"
-];
-
-export default function Skills() {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
+export default function SkillsClean() {
   return (
-    <section id="skills" ref={sectionRef} className="py-20 bg-gray-50">
+    <section id="skills" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
