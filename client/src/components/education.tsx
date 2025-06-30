@@ -19,7 +19,7 @@ const educationData = [
     coursework: "Data Structures, Algorithms, Database Systems, Web Development",
     icon: GraduationCap,
     color: "bg-blue-600"
-  }
+  },
 {
     degree: "AWS Solutions Architect",
     institution: "Amazon Web Services",
@@ -68,12 +68,6 @@ export default function Education() {
               </div>
               <p className="text-gray-700 mb-4">{edu.description}</p>
               
-              {edu.gpa && (
-                <div className="text-sm text-gray-600 mb-2">
-                  <p><strong>GPA:</strong> {edu.gpa}</p>
-                  <p><strong>Relevant Coursework:</strong> {edu.coursework}</p>
-                </div>
-              )}
               
               {edu.skills && (
                 <div className="flex flex-wrap gap-2 mt-4">
