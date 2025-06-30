@@ -46,7 +46,7 @@ export default function HeroMinimal() {
         >
           <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tight">
             <span className="bg-gradient-to-r from-slate-900 via-blue-800 to-slate-900 bg-clip-text text-transparent">
-              ALEX CHEN
+              Syed Ahsan Subhan
             </span>
           </h1>
           <div className="text-2xl md:text-3xl text-slate-600 font-light mb-12 tracking-wide">

@@ -4,15 +4,23 @@ import { GraduationCap, Award } from "lucide-react";
 const educationData = [
   {
     degree: "Bachelor of Computer Science",
-    institution: "Stanford University",
-    period: "2015 - 2019",
-    description: "Graduated Magna Cum Laude with a focus on Software Engineering and Web Technologies. Completed honors thesis on \"Modern Web Application Architecture Patterns.\"",
-    gpa: "3.8/4.0",
+    institution: "National University of Computer & Emerging Sciences - FAST",
+    period: "2002 - 2006",
+    description: "Graduated with a focus on Software Engineering and Web Technologies. Completed honors thesis on \"Integrated Variable DBMS - File Based Encrypted Database System.\"",
     coursework: "Data Structures, Algorithms, Database Systems, Web Development",
     icon: GraduationCap,
     color: "bg-blue-600"
   },
   {
+    degree: "Masters' in Software Engineering",
+    institution: "University of Bradford, UK",
+    period: "2008 - 2009",
+    description: "Graduated with a Distinction. Key focus on Software Engineering and Information Security. Completed honors thesis on \"Packet Loss in High Speed NIDS\"",
+    coursework: "Data Structures, Algorithms, Database Systems, Web Development",
+    icon: GraduationCap,
+    color: "bg-blue-600"
+  }
+{
     degree: "AWS Solutions Architect",
     institution: "Amazon Web Services",
     period: "2021",

@@ -24,7 +24,7 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-600 leading-relaxed">
-              With over 5 years of experience in full-stack development, I specialize in creating 
+              With over 15 years of experience in Software development and Project and Program Management, I specialize in creating 
               robust web applications using modern JavaScript frameworks and cloud technologies. 
               My passion lies in solving complex problems with clean, efficient code.
             </p>
