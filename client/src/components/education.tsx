@@ -6,6 +6,7 @@ const educationData = [
     degree: "Bachelor of Computer Science",
     institution: "National University of Computer & Emerging Sciences - FAST",
     period: "2002 - 2006",
+    gpa: "Merrit",
     description: "Graduated with a focus on Software Engineering and Web Technologies. Completed honors thesis on \"Integrated Variable DBMS - File Based Encrypted Database System.\"",
     coursework: "Data Structures, Algorithms, Database Systems, Web Development",
     icon: GraduationCap,
@@ -15,6 +16,7 @@ const educationData = [
     degree: "Masters' in Software Engineering",
     institution: "University of Bradford, UK",
     period: "2008 - 2009",
+    gpa: "Distinction",
     description: "Graduated with a Distinction. Key focus on Software Engineering and Information Security. Completed honors thesis on \"Packet Loss in High Speed NIDS\"",
     coursework: "Data Structures, Algorithms, Database Systems, Web Development",
     icon: GraduationCap,
@@ -68,6 +70,12 @@ export default function Education() {
               </div>
               <p className="text-gray-700 mb-4">{edu.description}</p>
               
+              {edu.gpa && (
+                <div className="text-sm text-gray-600 mb-2">
+                  <p><strong>GPA:</strong> {edu.gpa}</p>
+                  <p><strong>Relevant Coursework:</strong> {edu.coursework}</p>
+                </div>
+             )}
               
               {edu.skills && (
                 <div className="flex flex-wrap gap-2 mt-4">
